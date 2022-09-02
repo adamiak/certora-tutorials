@@ -1,0 +1,229 @@
+WARNING: contract name ERC20 is the same as the file name and can be omitted from contracts/ERC20.sol:ERC20
+WARNING: Default package file package.json not found
+[32mCollecting contracts and building[0m
+[32mLocal CVL specification syntax checking finished successfully[0m
+[32mCollected contract bytecode and metadata[0m
+Type checking ERC20
+[32mLocal type checking finished successfully[0m
+requesting verification from https://prover.certora.com/cli/verify
+Compressing the files...
+
+  - compressing  (1/1)  - compressing  (1/18)  - compressing  (2/18)  - compressing  (3/18)  - compressing  (4/18)  - compressing  (5/18)  - compressing  (6/18)  - compressing  (7/18)  - compressing  (8/18)  - compressing  (9/18)  - compressing  (10/18)  - compressing  (11/18)  - compressing  (12/18)  - compressing  (13/18)  - compressing  (14/18)  - compressing  (15/18)  - compressing  (16/18)  - compressing  (17/18)  - compressing  (18/18)
+[32mFinished compressing[0m
+
+Uploading files...
+[32mJob submitted to server[0m
+
+You can follow up on the status: https://prover.certora.com/jobStatus/97072/e218e763e5cbff33e3e2?anonymousKey=ae21b3fa6240a9b7e6fd672f75a4ac85c14276ac
+
+Output:
+processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /processing -processing \processing |processing /[INFO]: Download - uploadFiles/97072/e218e763e5cbff33e3e2.zip
+[INFO]: Download finished
+[INFO]: total=73759838208
+[INFO]: found 32 cache files
+[INFO]: Command: java -Xmx18g -Xms18g -XX:+CrashOnOutOfMemoryError -XX:ErrorFile=/home/appuser/code/java_error%p.log -jar /home/appuser/prover/emv.jar -cache contracts/ERC20.sol:ERC20-optimisticTrue-iterNone -assumeUnwindCond -globalTimeout 7200
+Start Fri Sep 02 09:44:56 UTC 2022
+Start Fri Sep 02 09:44:56 UTC 2022
+The scene contains 20 contracts:
+ERC20 : 0xce4604a0000000000000000000000005,
+ecrecover : 0x1,
+sha256 : 0x2,
+ripemd160 : 0x3,
+datacopy : 0x4,
+bigmod : 0x5,
+bn256Add : 0x6,
+bn256ScalarMul : 0x7,
+bn256Pairing : 0x8,
+Precompiled244 : 0xf4,
+Precompiled245 : 0xf5,
+Precompiled246 : 0xf6,
+Precompiled247 : 0xf7,
+Precompiled248 : 0xf8,
+Precompiled249 : 0xf9,
+Precompiled250 : 0xfa,
+Precompiled251 : 0xfb,
+Precompiled252 : 0xfc,
+Precompiled253 : 0xfd,
+Precompiled254 : 0xfe
+Running initial transformations
+Has CVL checks.
+Checking CVL setup.spec for contract ERC20
+Unrolling loops 1 time, unwinding condition is assumed
+Checking rule increaseAllowanceCorrectness (1 out of 6)...
+Starting to run on rule increaseAllowanceCorrectness 
+Checking rule onlyOwnerOrTransferFromChangeBalance (2 out of 6)...
+Starting to run on rule onlyOwnerOrTransferFromChangeBalance 
+Starting to run on rule name() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule approve(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule totalSupply() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule transferFrom(address,address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule decimals() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule increaseAllowance(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule balanceOf(address) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule symbol() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule decreaseAllowance(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule transfer(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule _owner() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule allowance(address,address) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule certorafallback_0() of onlyOwnerOrTransferFromChangeBalance
+Warning: In rule onlyOwnerOrTransferFromChangeBalance, invoking a function ERC20.certorafallback_0 (in f(e, args) :setup.spec:56:5) that has only reverting paths
+Checking rule transferCorrectness (3 out of 6)...
+Starting to run on rule transferCorrectness 
+Checking rule totalSupplyIsFixed (4 out of 6)...
+Starting to run on rule totalSupplyIsFixed 
+Checking rule canTransferBalance (5 out of 6)...
+Starting to run on rule canTransferBalance 
+Checking rule envfreeFuncsStaticCheck (6 out of 6)...
+Starting to run on rule envfreeFuncsStaticCheck 
+Starting to run on rule balanceOf(address) of envfreeFuncsStaticCheck
+Starting to run on rule allowance(address,address) of envfreeFuncsStaticCheck
+Starting to run on rule totalSupply() of envfreeFuncsStaticCheck
+Starting to run on rule totalSupplyIsFixed 
+Starting to run on rule increaseAllowanceCorrectness 
+Starting to run on rule transferCorrectness 
+Starting to run on rule canTransferBalance 
+Starting to run on rule _owner() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule certorafallback_0() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule allowance(address,address) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule decreaseAllowance(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Result for envfreeFuncsStaticCheck: envfreeFuncsStaticCheck: balanceOf(address): SUCCESS
+totalSupply(): SUCCESS
+allowance(address,address): SUCCESS
+Starting to run on rule transfer(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule symbol() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule name() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule balanceOf(address) of onlyOwnerOrTransferFromChangeBalance
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: totalSupplyIsFixed
+Verified: canTransferBalance
+totalSupplyIsFixed: Properties successfully verified on all inputs
+canTransferBalance: Properties successfully verified on all inputs
+Result for canTransferBalance: canTransferBalance: SUCCESS
+Result for totalSupplyIsFixed: totalSupplyIsFixed: SUCCESS
+Starting to run on rule decimals() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule increaseAllowance(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-_owner()
+onlyOwnerOrTransferFromChangeBalance-_owner(): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-balanceOf(address)
+onlyOwnerOrTransferFromChangeBalance-balanceOf(address): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-allowance(address,address)
+onlyOwnerOrTransferFromChangeBalance-allowance(address,address): Properties successfully verified on all inputs
+Starting to run on rule totalSupply() of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule transferFrom(address,address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Starting to run on rule approve(address,uint256) of onlyOwnerOrTransferFromChangeBalance
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-certorafallback_0()
+Verified: increaseAllowanceCorrectness
+onlyOwnerOrTransferFromChangeBalance-certorafallback_0(): Properties successfully verified on all inputs
+increaseAllowanceCorrectness: Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-decreaseAllowance(address,uint256)
+onlyOwnerOrTransferFromChangeBalance-decreaseAllowance(address,uint256): Properties successfully verified on all inputs
+Result for increaseAllowanceCorrectness: increaseAllowanceCorrectness: SUCCESS
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-transfer(address,uint256)
+onlyOwnerOrTransferFromChangeBalance-transfer(address,uint256): Properties successfully verified on all inputs
+postProcessCounterExamples: finished normally; adjusted 5 out of 24 candidate values
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Violated: transferCorrectness
+transferCorrectness: A property is violated
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-symbol()
+onlyOwnerOrTransferFromChangeBalance-symbol(): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-name()
+onlyOwnerOrTransferFromChangeBalance-name(): Properties successfully verified on all inputs
+Result for transferCorrectness: transferCorrectness: FAIL: 
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-decimals()
+onlyOwnerOrTransferFromChangeBalance-decimals(): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-totalSupply()
+onlyOwnerOrTransferFromChangeBalance-totalSupply(): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-increaseAllowance(address,uint256)
+onlyOwnerOrTransferFromChangeBalance-increaseAllowance(address,uint256): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-approve(address,uint256)
+onlyOwnerOrTransferFromChangeBalance-approve(address,uint256): Properties successfully verified on all inputs
+Total time for contract: 0 seconds ; Split time: 0 seconds ; Number of problems: 1 ; Solver time : 0 seconds
+Verified: onlyOwnerOrTransferFromChangeBalance-transferFrom(address,address,uint256)
+onlyOwnerOrTransferFromChangeBalance-transferFrom(address,address,uint256): Properties successfully verified on all inputs
+Result for onlyOwnerOrTransferFromChangeBalance: onlyOwnerOrTransferFromChangeBalance: name(): SUCCESS
+approve(address,uint256): SUCCESS
+totalSupply(): SUCCESS
+transferFrom(address,address,uint256): SUCCESS
+decimals(): SUCCESS
+increaseAllowance(address,uint256): SUCCESS
+balanceOf(address): SUCCESS
+symbol(): SUCCESS
+decreaseAllowance(address,uint256): SUCCESS
+transfer(address,uint256): SUCCESS
+_owner(): SUCCESS
+allowance(address,address): SUCCESS
+certorafallback_0(): SUCCESS
+Results for envfreeFuncsStaticCheck:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|balanceOf(address)                      |Not violated |0         |Envfree method balanceOf(address) is OK                     |                                                  |
+|totalSupply()                           |Not violated |0         |Envfree method totalSupply() is OK                          |                                                  |
+|allowance(address,address)              |Not violated |0         |Envfree method allowance(address,address) is OK             |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for onlyOwnerOrTransferFromChangeBalance:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|name()                                  |Not violated |0         |                                                            |                                                  |
+|approve(address,uint256)                |Not violated |0         |                                                            |                                                  |
+|totalSupply()                           |Not violated |0         |                                                            |                                                  |
+|transferFrom(address,address,uint256)   |Not violated |0         |                                                            |                                                  |
+|decimals()                              |Not violated |0         |                                                            |                                                  |
+|increaseAllowance(address,uint256)      |Not violated |0         |                                                            |                                                  |
+|balanceOf(address)                      |Not violated |0         |                                                            |                                                  |
+|symbol()                                |Not violated |0         |                                                            |                                                  |
+|decreaseAllowance(address,uint256)      |Not violated |0         |                                                            |                                                  |
+|transfer(address,uint256)               |Not violated |0         |                                                            |                                                  |
+|_owner()                                |Not violated |0         |                                                            |                                                  |
+|allowance(address,address)              |Not violated |0         |                                                            |                                                  |
+|certorafallback_0()                     |Not violated |0         |                                                            |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Results for all:
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+|Rule name                               |Verified     |Time (sec)|Description                                                 |Local vars                                        |
+|----------------------------------------|-------------|----------|------------------------------------------------------------|--------------------------------------------------|
+|envfreeFuncsStaticCheck                 |Not violated |0         |All passed!                                                 |                                                  |
+|canTransferBalance                      |Not violated |0         |                                                            |                                                  |
+|totalSupplyIsFixed                      |Not violated |0         |                                                            |                                                  |
+|increaseAllowanceCorrectness            |Not violated |0         |                                                            |                                                  |
+|transferCorrectness                     |Violated     |0         |Assert message:                                             |amount=4                                          |
+|                                        |             |          |                                                            |balanceSenderAfter=7                              |
+|                                        |             |          |                                                            |balanceSenderBefore=7                             |
+|                                        |             |          |                                                            |e.block.coinbase=0x401                            |
+|                                        |             |          |                                                            |e.msg.address=2                                   |
+|                                        |             |          |                                                            |e.msg.sender=0x2710                               |
+|                                        |             |          |                                                            |e.msg.value=0                                     |
+|                                        |             |          |                                                            |recipient=0x2710                                  |
+|onlyOwnerOrTransferFromChangeBalance    |Not violated |0         |All passed!                                                 |                                                  |
+*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*
+Failures summary:
+Failed on transferCorrectness:
+Assert message: 
+Done Fri Sep 02 09:45:06 UTC 2022
+Done Fri Sep 02 09:45:06 UTC 2022
+[INFO]: Process returned with 100
+
+Status page:
+https://prover.certora.com/jobStatus/97072/e218e763e5cbff33e3e2?anonymousKey=ae21b3fa6240a9b7e6fd672f75a4ac85c14276ac
+Verification report:
+https://prover.certora.com/output/97072/e218e763e5cbff33e3e2?anonymousKey=ae21b3fa6240a9b7e6fd672f75a4ac85c14276ac
+Full report:
+https://prover.certora.com/zipOutput/97072/e218e763e5cbff33e3e2?anonymousKey=ae21b3fa6240a9b7e6fd672f75a4ac85c14276ac
+Finished verification request
+ERROR: Prover found violations:
+ERROR: [rule] transferCorrectness

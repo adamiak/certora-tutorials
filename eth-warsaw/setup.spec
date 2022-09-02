@@ -73,7 +73,18 @@ rule onlyOwnerOrTransferFromChangeBalance(method f)
 rule transferCorrectness() {
 
     // assert balanceSenderAfter == balanceSenderBefore - amount;
-    assert true;
+    // assert true;
+    env e;
+    address recipient;
+    uint256 amount;
+
+    uint256 balanceSenderBefore = balanceOf(e.msg.sender);
+
+    transfer(e, recipient, amount);
+
+    uint256 balanceSenderAfter = balanceOf(e.msg.sender);
+
+    assert balanceSenderAfter == balanceSenderBefore - amount;
 }
 
 /**
